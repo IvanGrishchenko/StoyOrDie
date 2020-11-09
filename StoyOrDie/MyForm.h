@@ -14,7 +14,7 @@ namespace StoyOrDie {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// —водка дл€ MyForm
+	/// Svodka dlya MyForm
 	/// </summary>
 	public ref class MyForm : public System::Windows::Forms::Form
 	{
@@ -23,13 +23,13 @@ namespace StoyOrDie {
 		{
 			InitializeComponent();
 			//
-			//TODO: добавьте код конструктора
+			//TODO: dobav'te kod konstruktora
 			//
 		}
 
 	protected:
 		/// <summary>
-		/// ќсвободить все используемые ресурсы.
+		/// Osvobodit' vse ispol'zuemye resursy.
 		/// </summary>
 		~MyForm()
 		{
@@ -61,14 +61,14 @@ namespace StoyOrDie {
 
 	private:
 		/// <summary>
-		/// ќб€зательна€ переменна€ конструктора.
+		/// Obyazatel'naya peremennaya konstruktora.
 		/// </summary>
 		System::ComponentModel::Container^ components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
-		/// “ребуемый метод дл€ поддержки конструктора Ч не измен€йте 
-		/// содержимое этого метода с помощью редактора кода.
+		/// Trebuemyj metod dlya podderzhki konstruktora Ч ne izmenyajte 
+		/// soderzhimoe etogo metoda s pomoshch'yu redaktora koda.
 		/// </summary>
 		void InitializeComponent(void)
 		{
@@ -316,7 +316,7 @@ namespace StoyOrDie {
 	private: System::Void label6_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
 	
-		   //ѕроверка на неправильный ввод или его отсутствие
+		   //Input check (is it correct or is it empty?)
 		   bool Protect() {
 			   if ((textBox1->Text->Length == 0) || (textBox2->Text->Length == 0) 
 				   || (textBox3->Text->Length == 0) || (textBox4->Text->Length == 0) 
@@ -353,7 +353,7 @@ namespace StoyOrDie {
 			numOfSensors += System::Convert::ToInt32(textBox3->Text);
 			int* SensorsArray = new int[numOfSensors];
 			
-			//TODO √енераци€ показателей через ранд
+			//TODO Generate sensors readings with random
 
 			s_data Data;
 			Data.numOfSensors = numOfSensors;
@@ -387,9 +387,9 @@ private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e
 		String^ LfuncS = textBox4->Text;
 		std::string Lfunc = msclr::interop::marshal_as<std::string>(LfuncS);
 
-		//TODO √енераци€ показателей через ранд
+		//TODO Generate sensors readings with random
 
-		//√енераци€ идЄт на кнопке "подтвердить", а не "сгенерировать"
+		//Generaciya idyot na knopke "podtverdit'", a ne "sgenerirovat'"
 
 		s_data Data;
 		Data.numOfSensors = numOfSensors;
