@@ -1,6 +1,7 @@
 #pragma once
 
 #include "stoy.h"
+#include "Algorythm.cpp"
 #include <msclr\marshal_cppstd.h>
 
 
@@ -391,13 +392,15 @@ private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e
 
 		//Generaciya idyot na knopke "podtverdit'", a ne "sgenerirovat'"
 
-		s_data Data;
+		s_data Data; // info from interface
 		Data.numOfSensors = numOfSensors;
 		Data.sensors = SensorsArray;
 		Data.dimension = dimension;
 		Data.time1 = time1;
 		Data.time2 = time2;
 		Data.Lfunc = Lfunc;
+
+		//call Algorythm.
 	}
 }
 };
