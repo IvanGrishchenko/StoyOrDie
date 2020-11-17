@@ -1,6 +1,5 @@
-const int n = 1000;
-
-#include "cmath"
+#pragma once
+#include "Formulas.h"
 
 void Gauss(double A[n][n], double b[n], double res[n], int m)
 {
@@ -54,14 +53,14 @@ void Gauss(double A[n][n], double b[n], double res[n], int m)
 
 
 
-double f(double x)
+/*double f(double x)
 {
 	return (x - x * x * sin(x / 3) * cos(2 * x / 5) - log(abs(x) + abs(x + 1)));
-}
+}*/
 
 
 
-double findmax(double a, double b)
+/*double findmax(double a, double b)
 {
 	const int N = 100;
 	double h = (b - a) / N;
@@ -77,11 +76,11 @@ double findmax(double a, double b)
 		i++;
 	}
 	return res;
-}
+}*/
 
 
 
-double findmin(double a, double b)
+/*double findmin(double a, double b)
 {
 	const int N = 100;
 	double h = (b - a) / N;
@@ -97,7 +96,7 @@ double findmin(double a, double b)
 		i++;
 	}
 	return res;
-}
+}*/
 
 
 

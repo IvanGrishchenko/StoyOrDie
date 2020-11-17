@@ -118,12 +118,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="(B)SOD.cpp" />
+    <ClCompile Include="Formulas.cpp" />
     <ClCompile Include="MyForm.cpp" />
+    <ClCompile Include="SODMath.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Formulas.h" />
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="SODMath.h" />
     <ClInclude Include="stoy.h" />
   </ItemGroup>
   <ItemGroup>
